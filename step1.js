@@ -1,7 +1,6 @@
 const fs = require('fs');
-// var path = require('path');
-//
 
+//mimic the UNIX utility, cat.
 function cat(path) {
   fs.readFile(path, 'utf8', function(err, data) {
     if (err) {
